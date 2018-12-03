@@ -69,8 +69,6 @@ def FindDist(color):
     cenRay = camera.projectPixelTo3dRay(imgCntr)
     pixRay = camera.projectPixelTo3dRay((center_x,center_y))
 
- 
-
     angle = math.acos(prod(pixRay, cenRay) / (math.sqrt(prod(pixRay, pixRay))) * (math.sqrt(prod(cenRay, cenRay))))
 
     dg = int(math.degrees(angle))
